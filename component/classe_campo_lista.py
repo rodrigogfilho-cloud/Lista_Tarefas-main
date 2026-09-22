@@ -24,7 +24,8 @@ class Campo_tarefa(ft.Row):
 
 
         def alterar_cor():
-            
+            if self.caixa_estado.value == True
+                
         
         self.caixa_verificacao = ft.Checkbox(value=0,
                                              on_change=mudar_texto)

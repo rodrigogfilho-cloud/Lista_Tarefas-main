@@ -50,6 +50,12 @@ def main(page: ft.Page):
                                 cod_tarefa=tarefas[0])
         lista_campo_tarefas.append(novo_campo)
 
+        if tarefa['status'] == 'Concluído':
+            novo_campo.caixa_estado.value = True
+        else:
+            novo_campo.caixa_estado.value = False
+        novo_campo.alterar_cor()
+        adicionar_tarefa.append(novo_campo)
     
 
   
